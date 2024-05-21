@@ -1,6 +1,6 @@
 This is a simple project to verify the runtime behavior of tomcat with JPMS modules. This maven project consists of a module-info.java and is a module itself. 
 
-This project depends on another sample library(modularised) called modulelibrary(check pom.xml) that has 2 packages com.modulelib.exposed and com.modulelib.hidden.
+This project depends on another sample library(modularised) called [modulelibrary](https://github.com/rvfunky/modulelibrary)(check pom.xml) that has 2 packages com.modulelib.exposed and com.modulelib.hidden.
 
 In the version 1 of modulelibrary dependency, both the com.modulelib.exposed and com.modulelib.hidden are exported in module-info.java. So the imports of classes from these 2 packages in the HelloWorldServlet.java works well during compile time.
 And the war file is generated, deployed on tomcat works fine. Both compile time and run time behaviors are as expected.
